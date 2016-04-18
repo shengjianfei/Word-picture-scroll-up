@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title> jQuery向上滚动效果1</title>
+<style>
+* { margin: 0; padding: 0;}
+.myscroll { width: 300px; height: 260px; margin: 0 auto; border: 1px solid #ccc; line-height: 26px; font-size: 12px; overflow: hidden;}
+.myscroll li { height: 26px; margin-left: 25px;}
+.myscroll a { color: #333; text-decoration: none;}
+.myscroll a:hover { color: #ED5565; text-decoration: underline;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.myscroll').myScroll({
+		speed: 40, //数值越大，速度越慢
+		rowHeight: 26 //li的高度
+	});
+});
+</script>
+</head>
+
+<body>
+<h1 style="margin: 40px; font: 32px Microsoft Yahei; text-align: center;">jQuery 向上滚动效果</h1>
+
+<div class="menu">
+	<a class="cur" href="index.html">演示1（文字滚动）</a>
+	<a href="index2.html">演示2（图片滚动）</a>
+</div>
+
+<div class="myscroll">
+	<ul>
+		<li><a href="#">享受中国电子商务之都的全优势辐射1</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射2</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射3</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射4</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射5</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射6</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射7</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射8</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射9</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射10</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射11</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射12</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射13</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射14</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射15</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射16</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射17</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射18</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射19</a></li>
+		<li><a href="#">享受中国电子商务之都的全优势辐射20</a></li> 
+	</ul>
+</div>
+
+<style>
+.menu { height: 30px; margin-bottom: 30px; padding: 10px; text-align: center;}
+.menu a { display: inline-block; height: 30px; padding: 0 20px; line-height: 30px; font-size: 14px; color: #333; text-decoration: none;}
+.menu a:hover { color: blue;}
+.menu .cur { background-color: #ddd !important; color: #000;}
+</style>
+ 
+</body>
+</html>
